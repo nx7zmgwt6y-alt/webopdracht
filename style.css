@@ -1,0 +1,45 @@
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0px 2px 2px 2px rgba(80, 15, 15, 0.088);
+    border-radius: 7px;
+    background-color: white;
+}
+li{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+h1.a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2.b {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+body {
+    background: lavenderblush
+}
+.menu li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.foto-rechtsboven {
+    width: 300px;
+    position: absolute;
+    top: 150px;     
+    right: 10px;   
+    border-radius: 15px;
+}
+.foto-centraal {
+    width: 900px;
+    position: absolute;
+    left: 250px;
+}
+a {
+  color: inherit;            /* Neemt de kleur over van de omgeving */
+  text-decoration: none;     /* Haalt de onderstreping weg */
+}

@@ -25,7 +25,9 @@ button.addEventListener('click', () => {
 
       let tip = '';
       if (temp < 5) tip = 'Heel koud: dikke jas, sjaal en handschoenen!';
+      else if (temp < 10) tip = 'Koud: jas en trui aan te raden.';
       else if (temp < 15) tip = 'Fris: trui of jas is handig.';
+      else if (temp < 20) tip = 'Aangenaam: lichte jas of vest.';
       else if (temp < 25) tip = 'Lekker weer: T-shirt / lichte kleding.';
       else tip = 'Warm: korte broek, jurkje, zonnebril!';
 
@@ -45,4 +47,3 @@ button.addEventListener('click', () => {
       console.error(err);
     });
 });
-

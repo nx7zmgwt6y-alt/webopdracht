@@ -34,10 +34,10 @@ h1 {
     right: 10px;   
     border-radius: 15px;
 }
-.foto-centraal {
+.fotovoorpagina {
     width: 900px;
     position: absolute;
-    left: 250px;
+    left: 0px;
 }
 a {
   color: inherit;

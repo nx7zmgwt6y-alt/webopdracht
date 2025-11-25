@@ -8,8 +8,11 @@
     border-radius: 7px;
     background-color: white;
     position: fixed;
-    margin-top: -15rem;
+    margin-top: 0;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000;
 }
 li{
     padding: 10px 20px;
@@ -42,10 +45,12 @@ h1 {
 
 }
 .fotovoorpagina {
-    width: 900px;
-    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 70px; 
     left: 0px;
-    top: 6rem;
+    top: 10rem;
     width: 100%;
 
 }

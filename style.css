@@ -4,22 +4,82 @@
     justify-content: space-around;
     padding: 10px;
     gap: 10px;
-    box-shadow: 0px 2px 2px 2px #500f0f16;
-    border-radius: 7px;
-    background-color: white;
     position: fixed;
     margin-top: 0;
-    top: 0;
+    top: 0.5rem;
     left: 0;
     width: 100%;
     z-index: 1000;
+    font-family: 'TrajanPro';
+    border-bottom: 2px solid black;
+}
+.a {
+    position: absolute;
+    bottom: 2rem;
+    top: 13rem;
+    left: 5rem;
+    transform: translateX(-50%, -50%);
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 0.5rem;
+    background: transparent;
+}
+.t1 {
+    font-family: 'Radon';
+    font-size: 10vw;
+    font-weight: normal;
+    background: transparent;
+    text-shadow: 0 3px 5px rgb(89, 85, 85);
+}
+.t2 {
+    font-family: 'hellobride';
+    font-size: 13vw;
+    font-weight: normal;
+    background: transparent;
+    text-shadow: 0 3px 5px rgb(89, 85, 85);
+    position: relative;
+    line-height: 0.;
+    display: inline-block;
+    top: 1rem;
+}
+.b {
+    position: absolute;
+    bottom: 2rem;
+    top: 5rem;
+    left: 15rem;
+    transform: translateX(-50%, -50%);
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 0.5rem;
+    background: transparent;
+}
+.t3 {
+    font-family: 'Radon';
+    font-size: 7rem;
+    font-weight: normal;
+    background: transparent;
+    text-shadow: 0 3px 5px rgb(89, 85, 85);
+}
+.t4 {
+    font-family: 'hellobride';
+    font-size: 9rem;
+    font-weight: normal;
+    background: transparent;
+    text-shadow: 0 3px 5px rgb(89, 85, 85);
+    position: relative;
+    line-height: 0.;
+    display: inline-block;
+    top: 1rem;
 }
 li{
     padding: 10px 20px;
     cursor: pointer;
-}
-* {
-    font-family: Arial, Helvetica, sans-serif;
 }
 @font-face {
     font-family: 'Vogue';
@@ -27,13 +87,29 @@ li{
     font-weight: normal;
     font-style: normal;
 }
-body {
-    background: #fff0f5
+@font-face {
+    font-family: 'TrajanPro';
+    src: url(fonts/TrajanPro-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-h1 {
-    text-align: center;
-    font-family: 'Vogue';
-    margin-top: 17rem;
+@font-face {
+    font-family: 'Radon';
+    src: url(fonts/Radon.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hellobride';
+    src: url(fonts/hellobride.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: Arial, serif;
+}
+* {
+    background: #f7f1eb
 }
 .foto-rechtsboven {
     width: 300px;
@@ -42,17 +118,15 @@ h1 {
     right: 10px;   
     border-radius: 15px;
     box-shadow: 0px 2px 2px 2px #1d0a0a84;
-
 }
 .fotovoorpagina {
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 70px; 
+    margin-top: 90px; 
     left: 0px;
     top: 10rem;
     width: 100%;
-
 }
 a {
   color: inherit;
@@ -61,8 +135,42 @@ a {
 @media (max-width: 600px) {
     .fotovoorpagina {
         width: 100%;
-        height: 250px; /* hoogte die jij mooi vindt voor mobiel */
-        object-fit: cover; /* snijdt de zijkanten weg */
-        object-position: center; /* toont het midden van de foto */
+        height: 250px; 
+        object-fit: cover;
+        object-position: center;
     }
+}
+.header {
+    position: relative;
+}
+
+.titel {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    font-family: 'TrajanPro';
+    font-size: 3rem;
+}
+.hero {
+    position: relative;
+}
+.menu a.active {
+    color: #b86556;
+    font-weight: bold;
+}
+.hero-line {
+    width: 40%;
+    height: 2px;
+    border: none;
+    background-color: black;
+    margin: 8.5rem auto;
+}
+.hero-line2 {
+    width: 40%;
+    height: 2px;
+    border: none;
+    background-color: black;
+    margin: 17rem auto;
 }

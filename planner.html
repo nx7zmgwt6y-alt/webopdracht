@@ -16,10 +16,17 @@
       <span class="t4">Outfit Planner</span>
     </h1>
     <hr class="hero-line2">
-<input id="city-input" placeholder="Voer een stad in...">
-<input id="country-input" placeholder="Landcode (bijv. NL, FR, US)">
-<button id="weather-btn">Bekijk weer</button>
+<div class="weather-bar">
+  <input id="city-input" placeholder="City">
+  <input id="country-input" placeholder="Landcode (e.g. NL, FR, US)">
+  <button id="weather-btn">Show weather</button>
+</div>
 <div id="weather-result"></div>
-<script src="script.js"></script>
+<script src="script4.js"></script>
+<script>
+  window.addEventListener('load', function () {
+    document.body.classList.add('fade-in');
+  });
+</script>
 </body>
 </html>

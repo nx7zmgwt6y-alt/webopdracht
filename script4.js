@@ -7,10 +7,15 @@ const resultDiv = document.getElementById("weather-result");
 
 const moodboards = {
   veryCold: [
-    "img/verycold/verycold1.jpg", "img/verycold/verycold2.jpg", "img/verycold/verycold3.jpg", "img/verycold/verycold4.jpg", "img/verycold/verycold5.jpg", "img/verycold/verycold6.jpg", "img/verycold/verycold7.jpg"
   ],
   cold: [
-    "img/cold/cold1.jpg", "img/cold/cold2.jpg", "img/cold/cold3.jpg", "img/cold/cold4.jpg", "img/cold/cold5.jpg", "img/cold/cold6.jpg", "img/cold/cold7.jpg"
+    "img/cold/cold1.jpg",
+    "img/cold/cold2.jpg",
+    "img/cold/cold3.jpg",
+    "img/cold/cold4.jpg",
+    "img/cold/cold5.jpg",
+    "img/cold/cold6.jpg",
+    "img/cold/cold7.jpg"
   ],
   cool: [
   ],

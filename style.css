@@ -1,4 +1,4 @@
-.menu{
+.menu {
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -12,44 +12,48 @@
     z-index: 1000;
     font-family: 'TrajanPro';
     border-bottom: 2px solid black;
+    background-color: #f7f1eb;
 }
 .a {
     position: absolute;
-    bottom: 2rem;
-    top: 13rem;
-    left: 5rem;
-    transform: translateX(-50%, -50%);
+    left: 50%;
+    bottom: 3rem;
+    transform: translate(-50%, 85%);
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     list-style: none;
     justify-content: center;
+    align-items: flex-end;
     margin: 0;
-    padding: 0 0 0.5rem;
+    padding: 0;
     background: transparent;
+    white-space: nowrap;
 }
 .t1 {
     font-family: 'Radon';
-    font-size: 10vw;
+    font-size: clamp(2rem, 10vw, 8rem);
     font-weight: normal;
     background: transparent;
     text-shadow: 0 3px 5px rgb(89, 85, 85);
+    line-height: 0.9;
+    display: inline-block;
 }
 .t2 {
     font-family: 'hellobride';
-    font-size: 13vw;
+    font-size: clamp(1.5rem, 11vw, 9rem);
     font-weight: normal;
     background: transparent;
     text-shadow: 0 3px 5px rgb(89, 85, 85);
     position: relative;
-    line-height: 0.;
+    line-height: 0.9;
     display: inline-block;
-    top: 1rem;
+    top: 0.5rem;
 }
 .b {
     position: absolute;
     bottom: 2rem;
-    top: 5rem;
-    left: 15rem;
+    top: 7rem;
+    left: 16rem;
     transform: translateX(-50%, -50%);
     display: flex;
     gap: 5rem;
@@ -61,14 +65,14 @@
 }
 .t3 {
     font-family: 'Radon';
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: normal;
     background: transparent;
     text-shadow: 0 3px 5px rgb(89, 85, 85);
 }
 .t4 {
     font-family: 'hellobride';
-    font-size: 9rem;
+    font-size: 8rem;
     font-weight: normal;
     background: transparent;
     text-shadow: 0 3px 5px rgb(89, 85, 85);
@@ -77,7 +81,7 @@
     display: inline-block;
     top: 1rem;
 }
-li{
+li {
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -107,9 +111,8 @@ li{
 }
 body {
     font-family: Arial, serif;
-}
-* {
     background: #f7f1eb
+
 }
 .foto-rechtsboven {
     width: 300px;
@@ -165,12 +168,147 @@ a {
     height: 2px;
     border: none;
     background-color: black;
-    margin: 8.5rem auto;
+    margin: 6rem auto;
 }
 .hero-line2 {
     width: 40%;
     height: 2px;
     border: none;
     background-color: black;
-    margin: 17rem auto;
+    margin: 4rem auto 1rem;
+}
+#city-input,
+#country-input,
+#weather-btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #f3cbcb;
+    outline: none;
+    background-color: #f7dada;
+    gap: 5rem;
+    font-family: "Georgia", serif;
+}
+#city-input,
+#country-input {
+    width: 200px;
+}
+#weather-btn {
+    background-color: #e9c0c0;
+    cursor: pointer;
+    transition: 0.2s;
+    border-color: #e9c0c0;
+}
+#weather-btn:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+.weather-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    position: relative;
+    z-index: 10;
+    gap: 1rem
+}
+body {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+body.fade-in {
+    opacity: 1;
+}
+.weather-card {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 24px 28px;
+    background: #fff5f6; 
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    font-family: "Georgia", serif;
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity:0; transform:translateY(8px); }
+    to { opacity:1; transform:translateY(0); }
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.weather-header h2 {
+    margin: 0;
+        font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.weather-description {
+    margin-top: 4px;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.weather-temp {
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.weather-details {
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.clothing-advice {
+    background: #ffe9f0;
+    padding: 14px 16px;
+    border-left: 4px solid #f2a1c2;
+    border-radius: 14px;
+    line-height: 1.7;
+}
+
+.clothing-advice .title {
+    margin: 0 0 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+.moodboard {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.moodboard .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.moodboard .row-top img {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+.moodboard .row-bottom {
+    margin-top: -40px;
+}
+
+.moodboard .row-bottom img {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
 }

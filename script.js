@@ -13,10 +13,16 @@ const moodboards = {
     "img/cold/cold1.jpg", "img/cold/cold2.jpg", "img/cold/cold3.jpg", "img/cold/cold4.jpg", "img/cold/cold5.jpg", "img/cold/cold6.jpg", "img/cold/cold7.jpg"
   ],
   cool: [
+    "img/cool/cool1.jpg", "img/cool/cool2.jpg", "img/cool/cool3.jpg", "img/cool/cool4.jpg", "img/cool/cool5.jpg", "img/cool/cool6.jpg", "img/cool/cool7.jpg"
+  ],
+  mild: [
+    "img/mild/mild1.jpg", "img/mild/mild2.jpg", "img/mild/mild3.jpg", "img/mild/mild4.jpg", "img/mild/mild5.jpg", "img/mild/mild6.jpg", "img/mild/mild7.jpg",
   ],
   warm: [
+    "img/warm/warm1.jpg", "img/warm/warm2.jpg", "img/warm/warm3.jpg", "img/warm/warm4.jpg", "img/warm/warm5.jpg", "img/warm/warm6.jpg", "img/warm/warm7.jpg"
   ],
   hot: [
+    "img/hot/hot1.jpg", "img/hot/hot2.jpg","img/hot/hot3.jpg", "img/hot/hot4.jpg", "img/hot/hot5.jpg", "img/hot/hot6.jpg", "img/hot/hot7.jpg",
   ]
 };
 
@@ -123,7 +129,7 @@ function getClothingAdvice(temp, description) {
   } else if (temp > 15 && temp <= 22) {
     text =
       "Mild: light layers work well, such as a T-shirt with a thin jacket or cardigan.";
-    category = "cool";
+    category = "mild";
   } else if (temp > 22 && temp <= 28) {
     text =
       "Warm: breathable clothing like T-shirts, dresses, or shorts are perfect.";

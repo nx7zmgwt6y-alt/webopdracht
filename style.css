@@ -348,10 +348,72 @@ body.fade-in {
     justify-content: center;
     margin-top: 3rem;
     box-shadow: 0 8px 20px #0000000d;
-
 }
 #planner-btn:hover {
     background-color: black;
     color: white;
     border-color: black;
+}
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 7rem;
+    font-family: "Georgia", serif;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 4rem auto;
+    border: 2px solid #fcf4ef;
+    border-radius: 15px;
+    padding: 15px 40px;
+    background-color: #fff9f5;
+    margin-bottom: 0;
+}
+.leftfooter span,
+.centerfooter span {
+    display: block;
+}
+.leftfooter {
+    text-align: left;
+}
+.middlefooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.logo {
+    width: 10rem;
+    margin-bottom: 0;
+}
+.rightfooter {
+    min-width: 5rem;
+}
+.centerfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+.rights {
+    font-size: 0.6rem;
+    color: rgb(171, 163, 163);
+}
+.name {
+    font-family: 'Radon';
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.insta {
+    width: 3rem;
+}
+.rightfooter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }

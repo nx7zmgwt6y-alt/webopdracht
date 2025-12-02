@@ -6,11 +6,12 @@
   <meta charset="UTF-8">
 </head>
 <body>
-    <ul class="menu">
-        <li><a href="index.html" class="active">HOME</a></li>
-        <li><a href="planner.html">PLANNER</a></li>
-        <li><a href="Contact.html">CONTACT</a></li>
-    </ul>
+  <ul class="menu">
+    <li><a href="index.html" class="active">HOME</a></li>
+    <li><a href="planner.html">PLANNER</a></li>
+    <li><a href="Contact.html">CONTACT</a></li>
+  </ul>
+
   <div class="hero">
     <img src="fotovoorpagina.png" class="fotovoorpagina" alt="beschrijving van de foto">
     <h1 class="a">
@@ -18,11 +19,25 @@
       <span class="t2">Outfit Planner</span>
     </h1>
   </div>
-  <hr class="hero-line">
-<script>
+
+  <div class="by-line">
+    <span class="by">BY</span>
+    <div class="line"></div>
+    <span class="names">Jolie, Nando, Nessah & Roxeanne</span>
+  </div>
+
+  <div class="tekstje">
+    <p class="p1">Out of outfit ideas? </p>
+    <p class="p2">Start here and search your destination for instant inspiration.</p>
+    <a href="planner.html">
+      <button id="planner-btn">Go to planner</button>
+    </a>
+  </div>
+
+  <script>
   window.addEventListener('load', function () {
     document.body.classList.add('fade-in');
   });
-</script>
+  </script>
 </body>
 </html>

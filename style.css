@@ -6,13 +6,14 @@
     gap: 10px;
     position: fixed;
     margin-top: 0;
-    top: 0.5rem;
+    top: 0rem;
     left: 0;
     width: 100%;
     z-index: 1000;
     font-family: 'TrajanPro';
     border-bottom: 2px solid black;
     background-color: #f7f1eb;
+    box-shadow: 0 8px 20px #0000000d;
 }
 .a {
     position: absolute;
@@ -156,36 +157,42 @@ a {
     font-family: 'TrajanPro';
     font-size: 3rem;
 }
+.by-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7rem auto 0;
+    margin-left: 15rem;
+    gap: 40px;
+    font-family: "Georgia", serif;
+}
+.by,
+.names {
+    font-style: italic;
+    font-size: 1rem;
+}
+.by-line .line {
+    height: 2px;
+    width: 400px;
+    background-color: black;
+}
 .hero {
     position: relative;
 }
 .menu a.active {
-    color: #b86556;
+    color: #dea3a3;
     font-weight: bold;
 }
-.hero-line {
-    width: 40%;
-    height: 2px;
-    border: none;
-    background-color: black;
-    margin: 6rem auto;
-}
-.hero-line2 {
-    width: 40%;
-    height: 2px;
-    border: none;
-    background-color: black;
-    margin: 4rem auto 1rem;
-}
+
 #city-input,
 #country-input,
 #weather-btn {
     font-size: 1rem;
     padding: 10px 15px;
     border-radius: 10px;
-    border: 2px solid #f3cbcb;
+    border: 2px solid #f5dce4;
     outline: none;
-    background-color: #f7dada;
+    background-color: #ffe9f0;
     gap: 5rem;
     font-family: "Georgia", serif;
 }
@@ -194,10 +201,10 @@ a {
     width: 200px;
 }
 #weather-btn {
-    background-color: #e9c0c0;
+    background-color: #f5c5d4;
     cursor: pointer;
     transition: 0.2s;
-    border-color: #e9c0c0;
+    border-color: #e9b6b6;
 }
 #weather-btn:hover {
     background-color: black;
@@ -207,7 +214,7 @@ a {
 .weather-bar {
     display: flex;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 19rem;
     position: relative;
     z-index: 10;
     gap: 1rem
@@ -225,7 +232,7 @@ body.fade-in {
     padding: 24px 28px;
     background: #fff5f6; 
     border-radius: 18px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 20px #0000000d;
     font-family: "Georgia", serif;
     animation: fadeIn 0.4s ease-out;
 }
@@ -246,7 +253,7 @@ body.fade-in {
 
 .weather-header h2 {
     margin: 0;
-        font-size: 1.5rem;
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
 }
 
@@ -283,14 +290,14 @@ body.fade-in {
     letter-spacing: 0.08em;
 }
 .moodboard {
-    margin: 40px auto;
+    margin: 60px auto;
     text-align: center;
 }
 
 .moodboard .row {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .moodboard .row-top img {
@@ -311,4 +318,40 @@ body.fade-in {
     object-fit: cover;
     border-radius: 40px;
     box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+.tekstje {
+    font-family: "Georgia", serif;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 60px auto;
+    margin-top: 4rem;
+    border: 2px solid #fcf4ef;
+    border-radius: 15px;
+    padding: 30px 40px;
+    max-width: 700px;
+    background-color: #fff9f5;
+}
+#planner-btn {
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #f5dce4;
+    outline: none;
+    background-color: #ffe9f0;
+    gap: 5rem;
+    font-family: "Georgia", serif;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    box-shadow: 0 8px 20px #0000000d;
+
+}
+#planner-btn:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
 }
